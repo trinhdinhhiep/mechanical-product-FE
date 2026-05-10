@@ -1,0 +1,33 @@
+export const ROUTES = {
+  home: '/',
+  introduction: '/introduction',
+  news: {
+    index: '/news',
+    detail: (slug: string) => `/news/${slug}`,
+  },
+  contact: '/contact',
+  techLib: '/tech-lib',
+  product: {
+    index: '/product',
+    category: (categorySlug: string) => `/product/${categorySlug}`,
+    detail: (categorySlug: string, productSlug: string) => `/product/${categorySlug}/${productSlug}`,
+  },
+  search: '/search',
+  login: '/login',
+  addCategories: '/add-categories',
+  addProducts: '/add-products',
+  addArticles: '/add-articles',
+  deleteCategories: '/delete-categories',
+  deleteProducts: '/delete-products',
+  deleteArticles: '/delete-articles',
+  workingProcess: '/working-process',
+  terms: {
+    index: '/terms',
+    generalPolicy: '/terms/generalPolicy',
+    shippingPolicy: '/terms/shippingPolicy',
+    returnPolicy: '/terms/returnPolicy',
+    warrantyPolicy: '/terms/warrantyPolicy',
+    paymentPolicy: '/terms/paymentPolicy',
+    privacyPolicy: '/terms/privacyPolicy',
+  },
+}

@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Lockfile của package manager khác (dùng pnpm)
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+
+# Qodo
+.qodo/
